@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div id="prodetails" class="prodetails">
+        <div class="single-pro-image">
+            <img src="/images//laura-chouette-main.jpeg" width="100%" id="mainImg" alt="model" />
+
+            <div class="small-image-group">
+                <div class="small-img-col">
+                    <img src="images//laura-chouette-main2.jpeg" width="100%" class="small-img" alt="" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images//laura-chouette-main3.jpeg" width="100%" class="small-img" alt="" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images//laura-chouette-main4.jpeg" width="100%" class="small-img" alt="" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images//laura-chouette-main5.jpeg" width="100%" class="small-img" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <!-- Title -->
+            <h4>Marmeto</h4>
+            <h2>Embrace Sideboard</h2>
+            <hr>
+            <!-- Price -->
+            <div class="prices">
+                <div class="price">
+                    <p class="new-p">$12999.00 </p> &nbsp; &nbsp;&nbsp;
+                    <p class="off">35% Off</p>
+                </div>
+                    <p class="old-p">$19999.00</p>
+            </div>
+            <hr>
+            <!-- Color -->
+            <div class="colors">
+                <p>Choose a Color</p>
+                <div class="color-box">
+                    <div class="orange"></div>
+                    <div class="green"></div>
+                    <div class="voilet"></div>
+                    <div class="pink"></div>
+                </div>
+            </div>
+            <hr>
+            <!-- Size -->
+            <div class="sizes">
+                <p>Choose a Size</p>
+                <div class="size-radio">
+                    <div class="small">
+                        <input type="radio" name="size" id="small" class="col">
+                        <label for="small">Small</label>
+                    </div>
+                    <div class="medium">
+                        <input type="radio" name="size" id="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="large">    
+                        <input type="radio" name="size" id="large">
+                        <label for="large">Large</label>
+                    </div>
+                    <div class="ex-large">
+                        <input type="radio" name="size" id="extra-large">
+                        <label for="extra-large">Extra Large</label>
+                    </div>
+                    <div class="xxl">
+                        <input type="radio" name="size" id="xxl">
+                        <label for="xxl">XXL</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Add to Cart -->
+            <div class="addToCart">
+                <div class="quantity">
+                    <span class="material-symbols-outlined minus disabled">remove</span>
+                    <span class="quantity-value">1</span>  
+                    <span class="material-symbols-outlined plus">add</span>
+                </div>
+                <button class="button" id="addToCartBtn"><span class="material-symbols-outlined">shopping_bag</span><b>Add To Cart</b></button>
+            </div>
+
+            <!-- Cart Message -->
+            <div id="cartMessage"></div>
+
+            <hr>
+            <div class="description">
+                <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            const MainImg = document.getElementById("mainImg");
+            const SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function() {
+                MainImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function() {
+                MainImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function() {
+                MainImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function() {
+                MainImg.src = SmallImg[3].src;
+            }
+        </script>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
